@@ -13,7 +13,7 @@ A modern and responsive React-based portfolio showcasing routing, API integratio
 
 ## 🔗 Live Demo
 
-Hosted at: [React Portfolio Live](https://your-live-link.com)
+Hosted at: [React Portfolio Live](https://reactdevportfolio.netlify.app/)
 
 
 ## 🛠 Tech Stack
