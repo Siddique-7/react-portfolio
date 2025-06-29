@@ -1,7 +1,11 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { useTheme } from '../../context/ThemeContext'
 
 export default function Header() {
+
+    const {theme, toggleTheme} = useTheme()
+
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
@@ -54,6 +58,12 @@ export default function Header() {
 
                     {/* Login & Get Started (Tablet+ only) */}
                     <div className="hidden md:flex items-center md:order-2">
+
+                        <button
+                        className='mx-3 cursor-pointer'
+                        onClick={toggleTheme}
+                        > he
+                        </button>
                         <Link
                             to="#"
                             className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 mr-2"

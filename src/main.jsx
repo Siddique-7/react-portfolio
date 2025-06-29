@@ -8,6 +8,8 @@ import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
 import Github from './components/Github/Github.jsx'
+import { ThemeProvider } from './context/ThemeContext.jsx'
+
 
 // const router = createBrowserRouter([
 //   {
@@ -45,6 +47,8 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+        <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>,
 )
